@@ -33,7 +33,7 @@ Then Implement HackTool in Server.
  
 
 Step 2:
-Create Automation rule for detecting the preferred HackTool like so:
+Create Automation rule for detecting the preferred HackTool like so ( Please copy ONLY in RAW for formatting ):
 events:
   - NEW_PROCESS
   - EXISTING_PROCESS
