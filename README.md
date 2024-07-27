@@ -19,68 +19,63 @@ The Detection Lab project aimed to establish a controlled environment for simula
 - Slack as a communication program.
 - Windows 10 2022 as a Server.
 
-
-
 ## Construction
 
 Step 1:
-Download LimaCharlie Sensor. Connect LimaCharlie over the Powershell with the Server like so:
+</br>Download LimaCharlie Sensor. Connect LimaCharlie over the Powershell with the Server like so:
 .\hcp_win_x64_release_4.29.0.exe -i < insert here installation key from limacharlie >
 Then Implement HackTool in Server.
 <div>
   <img src="/soar_edr_automatedlab/img/construction/step_one.png" alt="First Step">
 </div>
- 
 
 Step 2:
-Create Automation rule for detecting the preferred HackTool like so ( Please copy ONLY in RAW for formatting ):
-events:
+</br>Create Automation rule for detecting the preferred HackTool like so:
+
+</br>events:
   - NEW_PROCESS
   - EXISTING_PROCESS
-op: and
-rules:
+</br>op: and
+</br>rules:
   - op: is windows
   - op: or
-    rules:
+    </br>rules:
       - case sensitive: false
-        op: ends with
-        path: event/FILE_PATH
-        value: lazagne.exe
+        </br>op: ends with
+        </br>path: event/FILE_PATH
+        </br>value: lazagne.exe
       - case sensitive: false
-        op: ends with
-        path: even/COMMAND_LINE
-        value: all
+        </br>op: ends with
+        </br>path: even/COMMAND_LINE
+        </br>value: all
       - case sensitive: false
-        op: contains
-        path: event/COMMAND_LINE
-        value: lazagne
+        </br>op: contains
+        </br>path: event/COMMAND_LINE
+        </br>value: lazagne
       - case sensitive: false
-        op: is
-        path: event/HASH
-        value: 467e49f1f795c1b08245ae621c59cdf06df630fc1631dc0059da9a032858a486’
-
+        </br>op: is
+        </br>path: event/HASH
+        </br>value: 467e49f1f795c1b08245ae621c59cdf06df630fc1631dc0059da9a032858a486’
+</br>
 Step 3: 
-Create a Slack Channel and a Tines Playbook.
+</br>Create a Slack Channel and a Tines Playbook.
 <div>
   <img src="/soar_edr_automatedlab/img/construction/step_two.png" alt="Second Step">
 </div>
-
+</br>
 Step 4:
-Build your Tines playbook.
+</br>Build your Tines playbook.
 <div>
   <img src="/soar_edr_automatedlab/img/tines_playbook/SOAR_EDR_playbook.png" alt="Playbook">
 </div>
- 
-
+</br>
 Step 5:
-Connect the Tines Playbook via credentials with LimaCharlie and slack and test it in Tines.
+</br>Connect the Tines Playbook via credentials with LimaCharlie and slack and test it in Tines.
 <div>
   <img src="/soar_edr_automatedlab/img/construction/step_three.png" alt="Third Step">
 </div>
- 
-
+</br> 
 Full example of Construction:
-
- <div>
+<div>
   <img src="/soar_edr_automatedlab/img/construction/soar_edr.png" alt="Full Example">
 </div>
