@@ -28,7 +28,7 @@ Download LimaCharlie Sensor. Connect LimaCharlie over the Powershell with the Se
 .\hcp_win_x64_release_4.29.0.exe -i < insert here installation key from limacharlie >
 Then Implement HackTool in Server.
 <div>
-  <img src="/img/construction/step_one" alt="First Step">
+  <img src="/soar_edr_automatedlab/img/construction/step_one.png" alt="First Step">
 </div>
  
 
@@ -60,23 +60,27 @@ rules:
         value: 467e49f1f795c1b08245ae621c59cdf06df630fc1631dc0059da9a032858a486’
 
 Step 3: 
-Create a Slack Channel and a Tines Playbook.  
+Create a Slack Channel and a Tines Playbook.
+<div>
+  <img src="/soar_edr_automatedlab/img/construction/step_two.png" alt="Second Step">
+</div>
 
 Step 4:
 Build your Tines playbook.
+<div>
+  <img src="/soar_edr_automatedlab/img/tines_playbook/SOAR_EDR_playbook.png" alt="Playbook">
+</div>
  
 
 Step 5:
 Connect the Tines Playbook via credentials with LimaCharlie and slack and test it in Tines.
-
+<div>
+  <img src="/soar_edr_automatedlab/img/construction/step_three.png" alt="Third Step">
+</div>
  
-
-
-
-
-
-
-
 
 Full example of Construction:
- 
+
+ <div>
+  <img src="/soar_edr_automatedlab/img/construction/soar_edr.png" alt="Full Example">
+</div>
