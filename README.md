@@ -3,7 +3,7 @@
 
 ## Objective
 
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to monitor and analyze data with LimaCharlie as a Endpoint Detection and Response (EDR) system, generating test telemetry to mimic real-world attack scenarios with the HackingTool ‘LaZagne’. This hands-on experience was designed to deepen understanding of credential security, and defensive strategies.
+The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to monitor and analyze data with LimaCharlie as a Endpoint Detection and Response (EDR) system, to mimic real-world attack scenarios with the HackingTool ‘LaZagne’. This hands-on experience was designed to deepen understanding of credential security, and defensive strategies.
 
 ### Skills Learned
 
