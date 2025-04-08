@@ -5,13 +5,6 @@
 
 The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to monitor and analyze data with LimaCharlie as a Endpoint Detection and Response (EDR) system, to mimic real-world attack scenarios with the HackingTool ‘LaZagne’. This hands-on experience was designed to deepen understanding of credential security, and defensive strategies.
 
-### Skills Learned
-
-- Advanced understanding of EDR concepts and practical application.
-- Proficiency in analyzing and monitoring data.
-- Enhanced knowledge of network protocols and security vulnerabilities.
-- Development of critical thinking and problem-solving skills in cybersecurity.
-
 ### Tools Used
 
 - LimaCharlie as an EDR.
